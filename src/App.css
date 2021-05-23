@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+.title-with-bg {
+  width: 100%;
+  font-size: calc(28px + (40 - 28) * ((100vw - 600px) / (1600 - 600)));
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+}
+.title-no-bg {
+  width: 100%;
+  font-size: calc(28px + (40 - 28) * ((100vw - 600px) / (1600 - 600)));
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+}
+.e-description {
+  width: 100%;
+  margin: 0 auto 20px;
+  color: #667dcb;
+  font-size: 18px;
+  line-height: inherit;
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+
+.e-home-contact {
+  background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../../images/bg-home.jpg");
+  background-size: cover;
+  padding: 30px 0;
+}
+.e-home-contact::after {
+  background: rgba(0,0,0,0.1);
+}

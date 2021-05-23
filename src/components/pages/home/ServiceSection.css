@@ -1,0 +1,41 @@
+
+
+.home__service-section {
+  min-height: 80vh;
+  margin-bottom: 40px;
+}
+
+.home__service-item {
+  flex-direction: column;
+  margin: 15px 0;
+  padding: 0 60px !important;
+}
+
+.home__service-item a {
+  margin: auto;
+}
+
+.home__service-item .media-body {
+  width: 100%;
+}
+
+.home__service-item .icon {
+  margin-bottom: 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.home__service-item .home__si__header {
+  font-size: 16pt;
+  font-weight: bold;
+}
+.home__service-item .home__si__desc {
+  font-size: 14pt;
+}
+
+@media screen and (max-width: 1200px) {
+  .home__service-section {
+    top: 0;
+    margin-bottom: 60px;
+  }
+}

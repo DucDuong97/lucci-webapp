@@ -1,0 +1,110 @@
+.e-footer {
+  border-top: 2px solid #2A95E1;
+  border-bottom: 2px solid #2A95E1;
+  padding: 40px 0 20px;
+}
+.ef-listing > img {
+    margin-bottom: 30px;
+}
+.ef-description > img {
+    margin-bottom: 30px;
+}
+.ef-description > p {
+    font-size: 18px;
+}
+.ef-contact > h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 15px 0 30px;
+}
+.ef-contact > p {
+    position: relative;
+    margin-bottom: 12px;
+}
+.ef-contact > p i {
+    color: #24ABE2;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #24ABE2;
+    border-radius: 49%;
+    text-align: center;
+    padding-top: 3px;
+}
+.ef-contact > div {
+    margin: 30px 0 20px;
+}
+.ef-contact > div a {
+    opacity: 0.8;
+}
+.ef-contact > div a:hover {
+    opacity: 1;
+}
+.ef-articles > h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 15px 0 30px;
+}
+.ef-articles > a {
+    display: block;
+    color: #333;
+    position: relative;
+    margin-bottom: 12px;
+    opacity: 0.8;
+}
+.ef-articles > a:hover {
+    opacity: 1;
+}
+.ef-articles > a i {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    font-size: 10px;
+}
+.ef-listing > h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 15px 0 30px;
+}
+.ef-listing > a {
+    display: block;
+    color: #333;
+    position: relative;
+    opacity: 0.8;
+    font-weight: bold;
+}
+.ef-listing > a:hover {
+    opacity: 1;
+}
+.ef-listing > a img {
+    width: 70px;
+    height: 48px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .e-footer {
+    padding: 30px 0 20px;
+    border: none;
+  }
+  .ef-description > img {
+      margin-bottom: 25px;
+  }
+  .ef-description {
+      margin-bottom: 30px;
+  }
+  .ef-contact > h2 {
+      margin: 15px 0 25px;
+  }
+  .ef-contact > div {
+      margin: 20px 0;
+  }
+  .ef-contact > div a {
+      opacity: 1;
+  }
+}

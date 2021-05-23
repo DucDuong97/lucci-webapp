@@ -1,0 +1,39 @@
+{
+  "services": "Dịch vụ",
+  "customers": "Khách hàng",
+  "blogs": "Blogs",
+  "contact": "Liên hệ",
+  "name": "Tên",
+  "phone": "Số điện thoại",
+  "province": "Thành phố/Tỉnh",
+  "branch": "Chi nhánh",
+  "contactUs": "Liên hệ ngay",
+  "home": {
+    "title": "CHO NỤ CƯỜI TRỌN VẸN",
+    "description": "Những nụ cười rạng rỡ luôn mang đến những điều tốt đẹp cho cuộc sống, từ lúc còn là lứa tuổi thiếu nhi cho đến khi trưởng thành. Đó cũng là động lực để Lucci Dental nỗ lực cố gắng mang lại thêm nhiều những nụ cười khỏe mạnh và xinh tươi cho hàng Triệu con người Việt Nam.",
+    "serviceHeader": "Dịch vụ của chúng tôi",
+    "achievementHeader": "Thành tựu",
+    "customerHeader": "Hình ảnh các dịch vụ",
+    "customerVideoHeader": "Video Khách hàng",
+    "customerReviewHeader": "Phản hồi Khách hàng"
+  },
+  "serviceDetail": {
+    "title": "DỊCH VỤ CỦA CHÚNG TÔI",
+    "description": "",
+    "service": "Dịch vụ",
+    "servicePacks": "Các gói sản phẩm",
+    "processes": "Quy trình",
+    "customerImages": "Hình ảnh khách hàng",
+    "relatedBlogs": "Bài viết liên quan"
+  },
+  "blogPage": {
+    "title": "",
+    "description": "",
+    "recentBlogs": "Bài viết gần đây",
+    "commonBlogs": "Bài viết liên quan"
+  },
+  "contactPage": {
+    "title": "Liên hệ với chúng tôi",
+    "description": ""
+  }
+}

@@ -1,0 +1,78 @@
+
+.e-home-testimonials {
+  margin: 40px 0;
+}
+.eht-container {
+  position: relative;
+  padding: 20px 0;
+}
+.eht-container .slick-arrow {
+  width: 40px;
+  height: 40px;
+}
+.eht-item {
+  width: 200px;
+  height: 250px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  pointer-events: none;
+}
+.ehti-img {
+  text-align: center;
+}
+.ehti-img > img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px auto;
+  opacity: 0.5;
+  transition: all 0.2s linear 0s;
+}
+.eht-container .slick-current {
+  pointer-events: auto;
+}
+.eht-container .slick-current .ehti-img > img {
+  width: 250px;
+  height: 250px;
+  opacity: 1;
+}
+.eht-container .slick-prev {
+  left: 360px;
+}
+.eht-container .slick-next {
+  right: 80px;
+}
+.eht-container .slick-list {
+  overflow: visible;
+  pointer-events: none;
+}
+.ehti-text {
+  position: absolute;
+  background: #0092CF;
+  z-index: 10;
+  top: 0;
+  left: calc(100% + 170px);
+  width: calc(360px + (670 - 360) * ((100vw - 400px) / (1600 - 400)));
+  min-height: 250px;
+  font-size: 14pt;
+  padding: 20px;
+  pointer-events: none;
+  color: transparent;
+  transition: all 0.5s linear 0s;
+  display: none;
+}
+.eht-container .slick-current .ehti-text {
+  color: #F1F1F1;
+  display: block;
+}
+.ehti-text > p {
+  margin-bottom: 8px;
+}
+.ehti-text > div {
+  font-weight: bold;
+  color: #66bdda;
+  margin-bottom: 8px;
+}
