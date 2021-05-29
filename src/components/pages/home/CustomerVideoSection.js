@@ -11,26 +11,27 @@ function CustomerVideoSection({
 
   const YoutubeVideo = ({link}) => {
     return (
-      <div class="iframe-container">
-        <iframe src={`https://www.youtube.com/embed/${link ? link.url : ''}`} frameBorder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      <div className="iframe-container">
+        <iframe src={`https://www.youtube.com/embed/${link ? link.url : ''}`} frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen>
         </iframe>
       </div>
     );
-  }
+  };
 
   return (
     <>
-      <div class="container-fluid overflow-hidden margin-top-15">
-        <div class="row">
-          <div class="col-lg-8 no-padding">
+      <div className="container-fluid overflow-hidden margin-top-15">
+        <div className="row">
+          <div className="col-lg-8 no-padding">
             <YoutubeVideo link={videoLinks[1]} />
           </div>
-          <div class="col-lg-4 home__customer-video-list no-padding">
+          <div className="col-lg-4 home__customer-video-list no-padding">
             <div>
               <SectionHeader header={t('home.customerVideoHeader')} side={true} withBg={true}/>
             </div>
-            <div class="scrollable">
+            <div className="scrollable">
               {Array.isArray(videoLinks) ? videoLinks.map((video) => <YoutubeVideo link={video} />): ''}
             </div>
           </div>

@@ -11,7 +11,7 @@ function Navbar({sub}) {
  
   const changeLanguage = code => {
     i18n.changeLanguage(code);
-    setVi(code == 'vi');
+    setVi(code === 'vi');
   };
 
   const [vi,setVi] = useState(true);
@@ -22,26 +22,26 @@ function Navbar({sub}) {
 
   return (
     <>
-      <div class= {sub ? 'navbar__sub-page position-relative' : 'navbar'}>
-        <div class="navbar-container container">
-          <Link to='/' class="nav-logo" onClick={()=>handlePageChange("home")}>
+      <div className= {sub ? 'navbar__sub-page position-relative' : 'navbar'}>
+        <div className="navbar-container container">
+          <Link to='/' className="nav-logo" onClick={()=>handlePageChange("home")}>
             <img src='/icons/lucci-icon.png' alt="logo" />
           </Link>
           
-          <div class="menu-icon hide-pc" onClick={handleClick}>
+          <div className="menu-icon hide-pc" onClick={handleClick}>
             {click ? <FaTimes size={28}/> : <FaBars size={28}/>}
           </div>
           <div className={click ? 'nav-menu active' : 'nav-menu'}>
-            <Link to='/services' class="nav-link" onClick={()=>handlePageChange("serviceDetail")}>
+            <Link to='/services' className="nav-link" onClick={()=>handlePageChange("serviceDetail")}>
               {t('services')}
             </Link>
-            <a href='/#customerImgs' class="nav-link">
+            <Link to='/#customerImgs' className="nav-link">
             {t('customers')}
-            </a>
-            <Link to='/blogs' class="nav-link" onClick={()=>handlePageChange("blogPage")}>
+            </Link>
+            <Link to='/blogs' className="nav-link" onClick={()=>handlePageChange("blogPage")}>
             {t('blogs')}
             </Link>
-            <Link to='/contact' class="nav-link" onClick={()=>handlePageChange("contactPage")}>
+            <Link to='/contact' className="nav-link" onClick={()=>handlePageChange("contactPage")}>
             {t('contact')}
             </Link>
             <div className="lang-menu">

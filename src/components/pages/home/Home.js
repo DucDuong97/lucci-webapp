@@ -3,7 +3,7 @@ import AchievementSection from './AchievementSection'
 import CustomerImgSection from './CustomerImgSection'
 import CustomerReviewSection from './CustomerReviewSection'
 import CustomerVideoSection from './CustomerVideoSection'
-import { homeObj, getServiceItems, getAchievements, getVideos, getCustomerReviews, getSingletonContents } from './Data'
+import { getServiceItems, getAchievements, getVideos, getCustomerReviews, getSingletonContents } from './Data'
 import ServiceSection from './ServiceSection';
 
 function Home() {
@@ -22,7 +22,7 @@ function Home() {
 			},
 			imgs: serviceItem.customerImgUrls.map(customerImgUrl => customerImgUrl.imgUrl)
 		})) : [];
-	}
+	};
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -32,7 +32,7 @@ function Home() {
 			setCustomerImgs(createCustomerImgs(serviceItems));
 			setVideos(await getVideos());
 			setCustomerReviews(await getCustomerReviews());
-		}
+		};
 		fetchData();
 	}, []);
 

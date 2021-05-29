@@ -20,17 +20,17 @@ function Footer({
   useEffect(() => {
 		const fetchData = async () => {
 			setBlogs(await getBlogs());
-      setPolicies(await getPolicies());
-		}
+            setPolicies(await getPolicies());
+		};
 		fetchData();
 	}, []);
 
   return (
     <>
-      <div class="e-footer">
-        <div class="container no-padding">
-          <div class="row">
-            <div class="col-md-4 ef-listing hide-mobile">
+      <div className="e-footer">
+        <div className="container no-padding">
+          <div className="row">
+            <div className="col-md-4 ef-listing hide-mobile">
               <img src="/icons/lucci-icon.png" alt="Loon eyes" />
               {Array.isArray(policies) && policies.map((policy) =>
                 <Link to={`/policies/${policy.id}`} onClick={() => handlePageChange('articlePage')}>
@@ -39,7 +39,7 @@ function Footer({
                 </Link>
               )}
             </div>
-            <div class="col-md-4 ef-contact">
+            <div className="col-md-4 ef-contact">
               <h2 className="epg-title">Liên hệ</h2>
               <p>
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-3" />
@@ -57,7 +57,7 @@ function Footer({
                 <SocialMedia />
               </div>
             </div>
-            <div class="col-lg-4 ef-articles hide-mobile">
+            <div className="col-lg-4 ef-articles hide-mobile">
               <h2 className="epg-title">Blog</h2>
               {Array.isArray(blogs) && blogs.slice(0, 3).map((blog) =>
                 <Link to={`/blogs/${blog.id}`} onClick={() => handlePageChange('articlePage')}>

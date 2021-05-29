@@ -11,7 +11,7 @@ function SectionHeader({
   return (
     <>
       <div className={headerStyle}>
-				<p class={'wow fadeInLeft ' + titleStyle}>{header}</p>
+				<p className={'wow fadeInLeft ' + titleStyle}>{header}</p>
 			</div>
     </>
   )

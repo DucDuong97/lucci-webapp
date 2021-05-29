@@ -1,10 +1,11 @@
 import React from 'react';
 import './Button.css'
+import {Link} from "react-router-dom";
 
 function Button({content, link}) {
   return (
     <>
-      <a href={link} class="btn btn-primary text-uppercase">{content}</a>
+      <Link to={link} className="btn btn-primary text-uppercase">{content}</Link>
     </>
   )
 }

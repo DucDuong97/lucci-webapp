@@ -16,24 +16,24 @@ function BlogDetail() {
     const fetchData = async () => {
       setBlog(await getBlog(id));
       setBlogs(await getBlogs());
-    }
+    };
     fetchData();
   }, [id]);
 
   return (
     <>
-      <div class="e-blog-detail container">
-        <div class="row">
-          <div class="ebd-container col-lg-8 col-xs-12">
+      <div className="e-blog-detail container">
+        <div className="row">
+          <div className="ebd-container col-lg-8 col-xs-12">
             <h1>{blog.title}</h1>
-            <div class="ebd-param">
+            <div className="ebd-param">
               <span>Last update: {blog.publishDate}</span>
               <p><SocialMedia /></p>
             </div>
-            <div class="ebd-content">{blog.content}</div>
+            <div className="ebd-content">{blog.content}</div>
           </div>
 
-          <div class="col-lg-4 col-xs-12 hide-tablet">
+          <div className="col-lg-4 col-xs-12 hide-tablet">
             <BlogItemCommonSide blogs={blogs} />
           </div>
         </div>

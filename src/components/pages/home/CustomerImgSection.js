@@ -14,7 +14,7 @@ function CustomerImgSection({
   useEffect(() => {
     setKey(Array.isArray(customerImgs) && customerImgs.length > 0 ? 
     customerImgs[0].service.serviceName : '');
-  }, [customerImgs])
+  }, [customerImgs]);
 
   const ServiceTab = ({serviceImg, serviceName}) => {
     return (
@@ -25,7 +25,7 @@ function CustomerImgSection({
         </Nav.Link>
       </Nav.Item>
     );
-  }
+  };
 
   const CustomerImg = ({customerImg}) => {
     return (
@@ -33,7 +33,7 @@ function CustomerImgSection({
         <img src={`/icons/${customerImg}`} alt="service"/>
       </div>
     );
-  }
+  };
 
   const TabContent = ({serviceName, imgs}) => {
     return (
@@ -43,7 +43,7 @@ function CustomerImgSection({
         </div>
       </Tab.Pane>
     );
-  }
+  };
 
   return (
     <>
@@ -58,7 +58,7 @@ function CustomerImgSection({
               <TabContent serviceName={customerImg.service.serviceName} imgs={customerImg.imgs}/>) : ''}
           </Tab.Content>
         </Tab.Container>
-        <div class="row d-flex justify-content-center margin-top-30">
+        <div className="row d-flex justify-content-center margin-top-30">
           <Button content="Liên hệ ngay" link="#contact-form" />
         </div>
       </div>

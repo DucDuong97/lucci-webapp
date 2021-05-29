@@ -16,32 +16,31 @@ function AchievementSection({
 
   const Achievement = ({name, number, imgUrl}) => {
     return (
-      <div class="col-sm-4 home__achievement-item">
-        <p class="eha-animate-number">{number}</p>
-        {/* <img src={`/icons/${imgUrl.imgUrl}`} alt=""/> */}
+      <div className="col-sm-4 home__achievement-item">
+        <p className="eha-animate-number">{number}</p>
         <FontAwesomeIcon icon={imgUrl.imgUrl} size="4x"/>
         <p>{name}</p>
       </div>
     );
-  }
+  };
 
   const AchievementList = () => {
     return (
-      <div id="home__achievement-list" class="home__achievement-list">
-        <img class="home__achievement-bg" src={background} alt="lucci dental" />
-        <div class="container">
-          <div class="row">
+      <div id="home__achievement-list" className="home__achievement-list">
+        <img className="home__achievement-bg" src={background} alt="lucci dental" />
+        <div className="container">
+          <div className="row">
             {Array.isArray(achievements) ? achievements.map((achievement) => <Achievement {...achievement} />) : ''}
           </div>
         </div>
       </div>
     );
-  }
+  };
 
   return (
     <>
-      <div class="container-fluid">
-        <div class="row margin-top-15">
+      <div className="container-fluid">
+        <div className="row margin-top-15">
           <div className="col-md-4 no-padding">
             <SectionHeader header={t('home.achievementHeader')} side={true} withBg={true} />
           </div>

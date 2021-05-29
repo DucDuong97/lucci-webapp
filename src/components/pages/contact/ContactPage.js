@@ -11,27 +11,27 @@ function ContactPage({adresses, phone, email}) {
 
   return (
     <>
-      <div class="contact-page__container container">
-        <div class="row">
-          <div id="e-google-map" class="col-lg-6 e-google-map">
+      <div className="contact-page__container container">
+        <div className="row">
+          <div id="e-google-map" className="col-lg-6 e-google-map">
             <GoogleMap/>
           </div>
-          <div class="col-lg-6">
-            <div class="ecc-info">
-              <h2 class="epg-title">{t('contactPage.title')}</h2>
-              <div class="ef-contact margin-bottom-30">
+          <div className="col-lg-6">
+            <div className="ecc-info">
+              <h2 className="epg-title">{t('contactPage.title')}</h2>
+              <div className="ef-contact margin-bottom-30">
                 {adresses && adresses.map(adress => 
                   <p>
                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-3"/>
                     {adress}
                   </p>)
                 }
-                <p><FontAwesomeIcon icon={faPhone}className="mr-3"/>{phone}</p>
-                <p><FontAwesomeIcon icon={faEnvelope}className="mr-3"/>{email}</p>
+                <p><FontAwesomeIcon icon={faPhone} className="mr-3"/>{phone}</p>
+                <p><FontAwesomeIcon icon={faEnvelope} className="mr-3"/>{email}</p>
                 <SocialMedia />
               </div>
             </div>
-				  </div>
+          </div>
         </div>
       </div>
     </>
