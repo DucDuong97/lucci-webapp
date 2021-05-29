@@ -10,6 +10,7 @@ function Banner() {
   return (
     <>
       <div className={`home__top-banner ${page === 'home' ? '' : 'home__top-banner_sub'}`}>
+        TODO
         <img className="home__top-banner__img wow fadeIn" src='/icons/bg-home-top.jpg' alt="lucci dental" />
         <div className="home__top-banner__introduce wow fadeInUp hide-mobile">
           <p className="title-with-bg">{t(`${page}.title`)}</p>

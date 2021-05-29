@@ -22,6 +22,7 @@ function BlogPage() {
   const BlogItem = ({title, titleImgUrl, id}) => {
     return (
       <Link to={`/blogs/${id}`} className="blog-page__banner-item" onClick={() => handlePageChange('articlePage')}>
+          TODO
         <img src={`/icons/${titleImgUrl.imgUrl}`} alt="Blog" />
         <div>{title}</div>
       </Link>
@@ -32,6 +33,7 @@ function BlogPage() {
     return (
       <Link to={`/blogs/${id}`} className="blog-page__banner-item blog-page__banner-item-sub"
       onClick={() => handlePageChange('articlePage')}>
+          TODO
         <img src={`/icons/${titleImgUrl.imgUrl}`} alt="Blog" />
         <div>{title}</div>
       </Link>
@@ -43,6 +45,7 @@ function BlogPage() {
       <div className="blog-page__latest-item ebl-item-latest row">
         <div className="col-lg-6 col-xs-5 blog-page__latest-item-img">
           <Link to={`/blogs/${id}`} onClick={() => handlePageChange('articlePage')}>
+              TODO
             <img src={`/icons/${titleImgUrl.imgUrl}`} alt="Blog" />
           </Link>
         </div>

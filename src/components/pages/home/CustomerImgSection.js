@@ -20,6 +20,7 @@ function CustomerImgSection({
     return (
       <Nav.Item>
         <Nav.Link className="home__service-tab hvr-grow" eventKey={serviceName}>
+          TODO
           <img src={`/icons/${serviceImg.imgUrl}`} alt={serviceName}/>
           {serviceName}
         </Nav.Link>
@@ -30,6 +31,7 @@ function CustomerImgSection({
   const CustomerImg = ({customerImg}) => {
     return (
       <div className="col-lg-4 col-sm-6 col-xs-12 home__customer-img-pane">
+        TODO
         <img src={`/icons/${customerImg}`} alt="service"/>
       </div>
     );

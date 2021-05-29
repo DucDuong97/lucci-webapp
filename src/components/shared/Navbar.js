@@ -25,6 +25,7 @@ function Navbar({sub}) {
       <div className= {sub ? 'navbar__sub-page position-relative' : 'navbar'}>
         <div className="navbar-container container">
           <Link to='/' className="nav-logo" onClick={()=>handlePageChange("home")}>
+            TODO
             <img src='/icons/lucci-icon.png' alt="logo" />
           </Link>
           

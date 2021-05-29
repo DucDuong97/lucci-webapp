@@ -21,6 +21,7 @@ function CustomerReviewSection({
     return (
       <div className="eht-item">
         <div className="ehti-img">
+          TODO
           <img src={`/icons/${customerImgUrl.imgUrl}`} alt="Testimonials" />
         </div>
         <div className="ehti-text">

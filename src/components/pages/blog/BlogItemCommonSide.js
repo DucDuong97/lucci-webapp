@@ -11,6 +11,7 @@ function BlogItemCommonSide({blogs}) {
       <div className="blog-page__latest-item row">
         <div className="col-md-5 blog-page__latest-item-img">
           <Link to={`/blogs/${id}`}>
+              TODO
             <img src={`/icons/${titleImgUrl.imgUrl}`} alt="Blog" />
           </Link>
         </div>

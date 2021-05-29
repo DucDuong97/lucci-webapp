@@ -15,6 +15,7 @@ function ServiceSection({
       <>
         <div className="col-lg-4 col-sm-6 col-xs-12 media home__service-item hvr-grow">
           <Link to="/services">
+            TODO
             <img className="media-object icon" src={`/icons/${imgUrl.imgUrl}`} alt="service" />
           </Link>
           <div className="media-body text-center">

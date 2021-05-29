@@ -31,6 +31,7 @@ function Footer({
         <div className="container no-padding">
           <div className="row">
             <div className="col-md-4 ef-listing hide-mobile">
+              TODO
               <img src="/icons/lucci-icon.png" alt="Loon eyes" />
               {Array.isArray(policies) && policies.map((policy) =>
                 <Link to={`/policies/${policy.id}`} onClick={() => handlePageChange('articlePage')}>
