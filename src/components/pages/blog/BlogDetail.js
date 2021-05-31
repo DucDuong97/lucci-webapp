@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './BlogDetail.css';
 import SocialMedia from '../../shared/SocialMedia';
 import { useParams } from 'react-router-dom';
-import { getBlog, getBlogs } from '../home/Data';
+import { getBlog, getBlogs } from '../../../Data';
 import BlogItemCommonSide from './BlogItemCommonSide';
 import './BlogDetail.css';
 

@@ -3,6 +3,7 @@ import './CustomerReviewSection.css';
 import SectionHeader from '../../shared/SectionHeader';
 import {useTranslation} from 'react-i18next';
 import Slider from 'react-slick';
+import {WEB_URL} from "../../../Data";
 
 function CustomerReviewSection({
   reviews
@@ -21,8 +22,7 @@ function CustomerReviewSection({
     return (
       <div className="eht-item">
         <div className="ehti-img">
-          TODO
-          <img src={`/icons/${customerImgUrl.imgUrl}`} alt="Testimonials" />
+          <img src={WEB_URL + customerImgUrl.imgUrl} alt="Testimonials" />
         </div>
         <div className="ehti-text">
           <p>{comment}</p>

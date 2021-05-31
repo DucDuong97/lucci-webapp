@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import { getPolicy } from '../home/Data';
+import { getPolicy } from '../../../Data';
 
 function PolicyArticle() {
 

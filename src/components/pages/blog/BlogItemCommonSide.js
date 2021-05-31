@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
+import {WEB_URL} from "../../../Data";
 
 function BlogItemCommonSide({blogs}) {
 
@@ -11,8 +12,7 @@ function BlogItemCommonSide({blogs}) {
       <div className="blog-page__latest-item row">
         <div className="col-md-5 blog-page__latest-item-img">
           <Link to={`/blogs/${id}`}>
-              TODO
-            <img src={`/icons/${titleImgUrl.imgUrl}`} alt="Blog" />
+            <img src={WEB_URL + titleImgUrl.imgUrl} alt="Blog" />
           </Link>
         </div>
         <div className="col-md-7 blog-page__latest-item-text">

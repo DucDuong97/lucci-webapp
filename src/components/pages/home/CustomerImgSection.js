@@ -4,6 +4,7 @@ import {useTranslation} from 'react-i18next';
 import './CustomerImgSection.css'
 import { Tab, Nav } from 'react-bootstrap';
 import Button from '../../shared/Button';
+import {WEB_URL} from "../../../Data";
 
 function CustomerImgSection({
   customerImgs
@@ -20,8 +21,7 @@ function CustomerImgSection({
     return (
       <Nav.Item>
         <Nav.Link className="home__service-tab hvr-grow" eventKey={serviceName}>
-          TODO
-          <img src={`/icons/${serviceImg.imgUrl}`} alt={serviceName}/>
+          <img src={WEB_URL + serviceImg.imgUrl} alt={serviceName}/>
           {serviceName}
         </Nav.Link>
       </Nav.Item>
@@ -31,8 +31,7 @@ function CustomerImgSection({
   const CustomerImg = ({customerImg}) => {
     return (
       <div className="col-lg-4 col-sm-6 col-xs-12 home__customer-img-pane">
-        TODO
-        <img src={`/icons/${customerImg}`} alt="service"/>
+        <img src={WEB_URL + customerImg} alt="service"/>
       </div>
     );
   };

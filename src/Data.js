@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-const API_URL = "https://lucciadmin.herokuapp.com/api/";
-// const API_URL = "http://localhost:8080/api/";
+export const WEB_URL = "http://localhost:8080/";
+// export const WEB_URL = "https://lucciadmin.herokuapp.com/";
+const API_URL = WEB_URL + "api/";
 const SERVICE_API_URL = API_URL + "service-items";
 const ACHIEVEMENT_API_URL = API_URL + "achievements";
 const VIDEO_LINK_API_URL = API_URL + "videos";

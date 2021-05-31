@@ -7,7 +7,7 @@ import Navbar from './components/shared/Navbar'
 import Banner from './components/shared/Banner'
 import ContactForm from './components/shared/ContactForm'
 import Footer from './components/shared/Footer'
-import { getServiceItems, getSingletonContents, getOffices } from './components/pages/home/Data'
+import { getServiceItems, getSingletonContents, getOffices } from './Data'
 import BlogPage from './components/pages/blog/BlogPage';
 import ContactPage from './components/pages/contact/ContactPage';
 import BlogDetail from './components/pages/blog/BlogDetail';
@@ -32,7 +32,7 @@ function App() {
 			policies: [],
 			blogs: []
 		};
-	}
+	};
 
   const handlePageChange = (pageName) => {
     setPage(pageName);
@@ -41,14 +41,14 @@ function App() {
       setSub(true);
     }
     window.scrollTo(0, 0);
-  } 
+  };
 
 	useEffect(() => {
 		const fetchData = async () => {
 			setServices(await getServiceItems());
 			setFooterData(createFooterData(await getSingletonContents()));
       setOffices(await getOffices());
-		}
+		};
 		fetchData();
 	}, []);
 

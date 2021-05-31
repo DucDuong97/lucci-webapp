@@ -3,7 +3,7 @@ import AchievementSection from './AchievementSection'
 import CustomerImgSection from './CustomerImgSection'
 import CustomerReviewSection from './CustomerReviewSection'
 import CustomerVideoSection from './CustomerVideoSection'
-import { getServiceItems, getAchievements, getVideos, getCustomerReviews, getSingletonContents } from './Data'
+import { getServiceItems, getAchievements, getVideos, getCustomerReviews} from '../../../Data'
 import ServiceSection from './ServiceSection';
 
 function Home() {

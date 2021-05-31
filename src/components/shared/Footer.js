@@ -5,7 +5,7 @@ import { faChevronRight, faEnvelope, faMapMarkerAlt, faPhone } from '@fortawesom
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { PageContext } from '../PageContext';
-import { getBlogs, getPolicies } from '../pages/home/Data';
+import { getBlogs, getPolicies } from '../../Data';
 import './Footer.css';
 import SocialMedia from './SocialMedia';
 

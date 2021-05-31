@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getServiceItems } from '../home/Data'
+import { getServiceItems } from '../../../Data'
 import {useTranslation} from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
