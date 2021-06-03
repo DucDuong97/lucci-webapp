@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import {Link} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import './BlogPage.css';
-import {getBlogs, WEB_URL} from '../../../Data';
+import {getBlogs, IMAGE_SOURCE_URL} from '../../../Data';
 import BlogItemCommonSide from './BlogItemCommonSide';
 import { PageContext } from '../../PageContext';
 
@@ -32,7 +32,8 @@ function BlogPage() {
     return (
       <Link to={`/blogs/${id}`} className="blog-page__banner-item blog-page__banner-item-sub"
       onClick={() => handlePageChange('articlePage')}>
-        <img src={WEB_URL + titleImgUrl.imgUrl} alt="Blog" />
+        {titleImgUrl &&
+        <img src={IMAGE_SOURCE_URL + titleImgUrl.imgUrl} alt="Blog" />}
         <div>{title}</div>
       </Link>
     );
@@ -43,7 +44,8 @@ function BlogPage() {
       <div className="blog-page__latest-item ebl-item-latest row">
         <div className="col-lg-6 col-xs-5 blog-page__latest-item-img">
           <Link to={`/blogs/${id}`} onClick={() => handlePageChange('articlePage')}>
-            <img src={WEB_URL + titleImgUrl.imgUrl} alt="Blog" />
+            {titleImgUrl &&
+            <img src={IMAGE_SOURCE_URL + titleImgUrl.imgUrl} alt="Blog" />}
           </Link>
         </div>
         <div className="col-lg-6 col-xs-7 blog-page__latest-item-text">

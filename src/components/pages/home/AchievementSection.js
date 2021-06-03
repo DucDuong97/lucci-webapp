@@ -18,7 +18,8 @@ function AchievementSection({
     return (
       <div className="col-sm-4 home__achievement-item">
         <p className="eha-animate-number">{number}</p>
-        <FontAwesomeIcon icon={imgUrl.imgUrl} size="4x"/>
+        {imgUrl &&
+        <FontAwesomeIcon icon={imgUrl.imgUrl} size="4x"/>}
         <p>{name}</p>
       </div>
     );

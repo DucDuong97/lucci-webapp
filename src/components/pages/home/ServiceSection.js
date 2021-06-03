@@ -4,7 +4,7 @@ import Button from '../../shared/Button';
 import SectionHeader from '../../shared/SectionHeader';
 import './ServiceSection.css';
 import {Link} from "react-router-dom";
-import {WEB_URL} from "../../../Data";
+import {IMAGE_SOURCE_URL} from "../../../Data";
 
 function ServiceSection({
   services
@@ -16,7 +16,8 @@ function ServiceSection({
       <>
         <div className="col-lg-4 col-sm-6 col-xs-12 media home__service-item hvr-grow">
           <Link to="/services">
-            <img className="media-object icon" src={WEB_URL + imgUrl.imgUrl} alt="service" />
+            {imgUrl != null &&
+            <img className="media-object icon" src={IMAGE_SOURCE_URL + imgUrl.imgUrl} alt="service" />}
           </Link>
           <div className="media-body text-center">
             <p className="media-heading home__si__header">
