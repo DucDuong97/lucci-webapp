@@ -19,7 +19,7 @@ function PolicyArticle() {
       <div className="e-intro">
         <div className="container bg-white box-shadow-16">
           <p className="title-no-bg text-left color-black">{policy.name}</p>
-          {policy.content}
+          <div dangerouslySetInnerHTML={{__html: policy.content}}></div>
         </div>
       </div>
     </>

@@ -31,7 +31,8 @@ function BlogDetail() {
                 <span>Last update: {blog.publishDate}</span>
                 <p><SocialMedia /></p>
               </div>
-            <div className="ebd-content">{blog.content}</div>
+              <div className="ebd-content" dangerouslySetInnerHTML={{__html: blog.content}}></div>
+            </div>
           </div>
 
           <div className="col-lg-4 col-xs-12 hide-tablet">
