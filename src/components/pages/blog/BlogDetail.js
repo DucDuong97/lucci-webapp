@@ -24,12 +24,13 @@ function BlogDetail() {
     <>
       <div className="e-blog-detail container">
         <div className="row">
-          <div className="ebd-container col-lg-8 col-xs-12">
-            <h1>{blog.title}</h1>
-            <div className="ebd-param">
-              <span>Last update: {blog.publishDate}</span>
-              <p><SocialMedia /></p>
-            </div>
+          <div className="col-lg-8 col-xs-12">
+            <div className="ebd-container">
+              <h1>{blog.title}</h1>
+              <div className="ebd-param">
+                <span>Last update: {blog.publishDate}</span>
+                <p><SocialMedia /></p>
+              </div>
             <div className="ebd-content">{blog.content}</div>
           </div>
 
