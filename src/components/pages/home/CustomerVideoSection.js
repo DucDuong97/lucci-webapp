@@ -25,14 +25,14 @@ function CustomerVideoSection({
       <div className="container-fluid overflow-hidden margin-top-15">
         <div className="row">
           <div className="col-lg-8 no-padding">
-            <YoutubeVideo link={videoLinks[1]} />
+            <YoutubeVideo link={videoLinks[0]} />
           </div>
           <div className="col-lg-4 home__customer-video-list no-padding">
             <div>
               <SectionHeader header={t('home.customerVideoHeader')} side={true} withBg={true}/>
             </div>
             <div className="scrollable">
-              {Array.isArray(videoLinks) ? videoLinks.map((video) => <YoutubeVideo link={video} />): ''}
+              {Array.isArray(videoLinks) ? videoLinks.slice(1).map((video) => <YoutubeVideo link={video} />): ''}
             </div>
           </div>
         </div>

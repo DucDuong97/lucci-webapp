@@ -22,7 +22,8 @@ function BlogPage() {
   const BlogItem = ({title, titleImgUrl, id}) => {
     return (
       <Link to={`/blogs/${id}`} className="blog-page__banner-item" onClick={() => handlePageChange('articlePage')}>
-        <img src={titleImgUrl.imgUrl} alt="Blog" />
+        {titleImgUrl &&
+        <img src={IMAGE_SOURCE_URL + titleImgUrl.imgUrl} alt="Blog" />}
         <div>{title}</div>
       </Link>
     );

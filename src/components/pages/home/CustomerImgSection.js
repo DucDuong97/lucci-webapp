@@ -5,7 +5,6 @@ import './CustomerImgSection.css'
 import { Tab, Nav } from 'react-bootstrap';
 import Button from '../../shared/Button';
 import {IMAGE_SOURCE_URL} from "../../../Data";
-import {Link} from "react-router-dom";
 
 function CustomerImgSection({
   customerImgs

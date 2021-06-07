@@ -45,14 +45,14 @@ function Navbar({sub}) {
             <Link to='/contact' className="nav-link" onClick={()=>handlePageChange("contactPage")}>
             {t('contact')}
             </Link>
-            <div className="lang-menu">
+            {/* <div className="lang-menu">
               <div className={vi ? 'active' : ''} onClick={() => changeLanguage('vi')}>
                 <img alt="Language" src='/icons/icon-lang-vi.png' /> Vie
               </div>
               <div className={vi ? '' : 'active'} onClick={() => changeLanguage('en')}>
                 <img alt="Language" src='/icons/icon-lang-en.png' /> Eng
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getServiceItems } from '../../../Data'
+import { getServiceItems, IMAGE_SOURCE_URL } from '../../../Data'
 import {useTranslation} from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -36,7 +36,8 @@ function ServiceDetail() {
             <div className="media-body">
               <p className="media-heading">{name}</p>
             </div>
-            <img className="mr-3" src={`/icons/${imgUrl.imgUrl}`} alt={name} />
+            {imgUrl &&
+            <img className="mr-3" src={IMAGE_SOURCE_URL + imgUrl.imgUrl} alt={name} />}
           </div>
         </Nav.Link>
       </Nav.Item>
@@ -83,7 +84,7 @@ function ServiceDetail() {
   const CustomerImg = ({imgUrl}) => {
     return (
       <div className="col-md-6 col-xs-12 home__customer-img-pane">
-        <img src={`/icons/${imgUrl}`} alt="service"/>
+        <img src={IMAGE_SOURCE_URL + imgUrl} alt="service"/>
       </div>
     );
   }
@@ -92,7 +93,8 @@ function ServiceDetail() {
     return (
       <div className="col-md-6 blog-page__latest-item ebl-item-latest row">
         <div className="col-lg-6 col-xs-5 blog-page__latest-item-img">
-          <a href={link}><img src={`/icons/${titleImgUrl.imgUrl}`} alt={title}/></a>
+          {titleImgUrl &&
+          <a href={link}><img src={IMAGE_SOURCE_URL + titleImgUrl.imgUrl} alt={title}/></a>}
         </div>
         <div className="col-lg-6 col-xs-7 blog-page__latest-item-text">
           <h3><a href={link}>{title}</a></h3>
